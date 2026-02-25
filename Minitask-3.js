@@ -1,9 +1,15 @@
 
-kembalian = 155000
-uang50Rb = 0
-uang10Rb = 0
-uang5Rb = 0
-uang1Rb = 0
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+readline.question('Total Belanjaan? ', kembalian => {
+
+let uang50Rb = 0
+let uang10Rb = 0
+let uang5Rb = 0
+let uang1Rb = 0
 
     while(kembalian > 0){
     if (kembalian > 50000){
@@ -27,3 +33,6 @@ uang1Rb = 0
     console.log('kembalian 10Rb = '+ uang10Rb)
     console.log('kembalian 5Rb = '+ uang5Rb)
     console.log('kembalian 1Rb = '+ uang1Rb)
+
+      readline.close();
+});
