@@ -4,7 +4,7 @@ const readline = require('readline').createInterface({
   output: process.stdout
 });
 
-readline.question('Total Belanjaan? ', kembalian => {
+readline.question('Total Kembalian? ', kembalian => {
 
 let uang50Rb = 0
 let uang10Rb = 0
@@ -29,10 +29,11 @@ let uang1Rb = 0
             uang1Rb++
     }
     }
-    console.log('kembalian 50Rb = '+ uang50Rb)
-    console.log('kembalian 10Rb = '+ uang10Rb)
-    console.log('kembalian 5Rb = '+ uang5Rb)
-    console.log('kembalian 1Rb = '+ uang1Rb)
+    console.log(`kembalian 50Rb = ${uang50Rb} Lembar`);
+    console.log(`kembalian 10Rb = ${uang10Rb} Lembar`);
+    console.log(`kembalian 5Rb = ${uang5Rb} Lembar`);
+    console.log(`kembalian 1Rb = ${uang1Rb} Lembar`);
 
-      readline.close();
+
+    readline.close();
 });
