@@ -22,8 +22,7 @@ uang1Rb = 0
             kembalian = kembalian - 1000
             uang1Rb++
     }
-
-}
+    }
     console.log('kembalian 50Rb = '+ uang50Rb)
     console.log('kembalian 10Rb = '+ uang10Rb)
     console.log('kembalian 5Rb = '+ uang5Rb)
